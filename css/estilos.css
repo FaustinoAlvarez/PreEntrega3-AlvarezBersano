@@ -35,6 +35,22 @@ main {
 .ps-10{
     padding-left: 10rem;
 }
+.ps-28{
+    padding-left: 28rem;
+}
+.ps-20{
+    padding-left: 20rem;
+}
 .pe-10{
     padding-right: 10rem;
+}
+.resize{
+    height: 600px;
+    width: 480px;
+}
+.fs-L{
+    font-size: 3.5rem;
+}
+.fs-XL{
+    font-size: 5rem;
 }
