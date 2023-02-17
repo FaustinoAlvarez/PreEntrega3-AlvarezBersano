@@ -32,6 +32,9 @@ main {
 .pt-7{
     padding-top: 7rem;
 }
+.pt-10{
+    padding-top: 10rem;
+}
 .ps-10{
     padding-left: 10rem;
 }
@@ -53,4 +56,7 @@ main {
 }
 .fs-XL{
     font-size: 5rem;
+}
+.background_amarillo{
+    background-color: #fbe192;
 }
