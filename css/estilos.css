@@ -48,8 +48,8 @@ main {
     padding-right: 10rem;
 }
 .resize{
-    height: 600px;
-    width: 480px;
+    height: 500px;
+    width: auto;
 }
 .fs-L{
     font-size: 3.5rem;
@@ -68,4 +68,45 @@ main {
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.iframe_video{
+    width: 560px;
+    height: 315px;
+}
+
+
+@media (max-width: 992px) {
+    .iframe_video{
+        width: 420px;
+        height: 240px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .ps-1-{
+        padding-left: 2rem;
+        }
+    .ps-1-4{
+        padding-left: 6.8rem;
+        }
+    .fs-L{
+        font-size: 2.3rem;
+    }
+    .fs-XL{
+        font-size: 4rem;
+    }
+    .pt-7{
+        padding-top: 8.5rem;
+    }
+    .iframe_video{
+        width: 280px;
+        height: 160px;
+    }
+    .ps-10{
+        padding-left: 3rem;
+    }
+    .pe-10{
+        padding-right: 3rem;
+    }
 }
