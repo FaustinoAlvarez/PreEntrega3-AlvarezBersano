@@ -1,143 +1,204 @@
-html{
-    padding: 0;
-    margin: 0;
+@charset "UTF-8";
+html {
+  padding: 0;
+  margin: 0;
 }
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-size: 62.5%;
+
+html {
+  font-size: 62.5%;
 }
+
 * {
-    font-family: 'Noto Sans JP', sans-serif;;
-    font-size: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
 }
-a{
-    text-decoration: none;
-    font-size: x-large;
+
+a {
+  text-decoration: none;
+  font-size: x-large;
 }
-li{
-    list-style: none
+
+li {
+  list-style: none;
 }
+
 header {
-    background-color: #dfc8f2;
+  background-color: #dfc8f2;
 }
+
 footer {
-    background-color: #dfc8f2;
+  background-color: #dfc8f2;
 }
+
 main {
-    background-color: #fbe192;
+  background-color: #fbe192;
 }
 
-.pt-7{
-    padding-top: 7rem;
+.pt-7 {
+  padding-top: 7rem;
 }
-.pt-10{
-    padding-top: 10rem;
+
+.pt-10 {
+  padding-top: 10rem;
 }
-.ps-10{
-    padding-left: 10rem;
+
+.ps-10 {
+  padding-left: 10rem;
 }
-.ps-28{
-    padding-left: 28rem;
+
+.ps-28 {
+  padding-left: 28rem;
 }
-.ps-20{
-    padding-left: 20rem;
+
+.ps-20 {
+  padding-left: 20rem;
 }
-.pe-10{
-    padding-right: 10rem;
+
+.pe-10 {
+  padding-right: 10rem;
 }
-.resize{
-    height: 500px;
-    width: auto;
+
+.p-PC-R {
+  padding-right: 20rem;
 }
-.fs-m{
-    font-size: 2rem;
+
+.p-PC-R2 {
+  padding-right: 7rem;
 }
-.fs-L{
-    font-size: 3.5rem;
+
+.p-PC-L {
+  padding-left: 35rem;
 }
-.fs-XL{
-    font-size: 5rem;
+
+.resize {
+  height: 500px;
+  width: auto;
 }
-.background_amarillo{
-    background-color: #fbe192;
+
+.fs-m {
+  font-size: 2rem;
 }
+
+.fs-L {
+  font-size: 3.5rem;
+}
+
+.fs-XL {
+  font-size: 5rem;
+}
+
+.background_amarillo {
+  background-color: #fbe192;
+}
+
 .row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-.iframe_video{
-    width: 560px;
-    height: 315px;
-}
-/* PC tamaño normal */
-@media (max-width: 1440px){
-    .pt-10{
-        padding-top: 12rem;
-    }
-    .ps-1-{
-        padding-left: 12rem;
-        }
-    .ps-1-4{
-        padding-left: 20.8rem;
-        }
-        .fs-L{
-            font-size: 3rem;
-        }
-        .fs-XL{
-            font-size: 4.2rem;
-        }
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
+.iframe_video {
+  width: 560px;
+  height: 315px;
+}
+
+/* PC tamaño normal */
+@media (max-width: 1440px) {
+  .p-PC-R {
+    padding-right: 0rem;
+  }
+  .p-PC-R2 {
+    padding-right: 0rem;
+  }
+  .p-PC-L {
+    padding-left: 0rem;
+  }
+  .pt-10 {
+    padding-top: 12rem;
+  }
+  .ps-1- {
+    padding-left: 12rem;
+  }
+  .ps-1-4 {
+    padding-left: 20.8rem;
+  }
+  .fs-L {
+    font-size: 3rem;
+  }
+  .fs-XL {
+    font-size: 4.2rem;
+  }
+}
 /* Tablet */
 @media (max-width: 992px) {
-    .iframe_video{
-        width: 420px;
-        height: 240px;
-    }
-    .pt-10{
-        padding-top: 7.2rem;
-    }
-    .ps-1-{
-        padding-left: 5rem;
-        }
-    .ps-1-4{
-        padding-left: 13.8rem;
-        }
+  .p-PC-R {
+    padding-right: 0rem;
+  }
+  .p-PC-R2 {
+    padding-right: 0rem;
+  }
+  .p-PC-L {
+    padding-left: 0rem;
+  }
+  .iframe_video {
+    width: 420px;
+    height: 240px;
+  }
+  .pt-10 {
+    padding-top: 7.2rem;
+  }
+  .ps-1- {
+    padding-left: 5rem;
+  }
+  .ps-1-4 {
+    padding-left: 13.8rem;
+  }
 }
-
 /* Telefono */
 @media (max-width: 576px) {
-    .ps-1-{
-        padding-left: 2rem;
-        }
-    .ps-1-4{
-        padding-left: 6.8rem;
-        }
-    .fs-L{
-        font-size: 2.3rem;
-    }
-    .fs-XL{
-        font-size: 3.5rem;
-    }
-    .pt-10{
-        padding-top: 6rem;
-    }
-    .iframe_video{
-        width: 280px;
-        height: 160px;
-    }
-    .ps-10{
-        padding-left: 3rem;
-    }
-    .pe-10{
-        padding-right: 3rem;
-    }
+  .p-PC-R {
+    padding-right: 0rem;
+  }
+  .p-PC-R2 {
+    padding-right: 0rem;
+  }
+  .p-PC-L {
+    padding-left: 0rem;
+  }
+  .ps-1- {
+    padding-left: 2rem;
+  }
+  .ps-1-4 {
+    padding-left: 6.8rem;
+  }
+  .fs-L {
+    font-size: 2.3rem;
+  }
+  .fs-XL {
+    font-size: 3.5rem;
+  }
+  .pt-10 {
+    padding-top: 6rem;
+  }
+  .iframe_video {
+    width: 280px;
+    height: 160px;
+  }
+  .ps-10 {
+    padding-left: 3rem;
+  }
+  .pe-10 {
+    padding-right: 3rem;
+  }
 }
+
+/*# sourceMappingURL=estilos.css.map */
