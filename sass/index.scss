@@ -52,7 +52,7 @@ main {
     padding-right: 20rem;
 }
 .p-PC-R2{
-    padding-right: 7rem;
+    padding-right: 4rem;
 }
 .p-PC-L{
     padding-left: 35rem;
@@ -85,6 +85,19 @@ main {
 .iframe_video{
     width: 560px;
     height: 315px;
+}
+
+.carrousel-container{
+    width: 50vh;
+}
+.carrousel-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
 }
 /* PC tamaño normal */
 @media (max-width: 1440px){
@@ -176,4 +189,9 @@ main {
     .pe-10{
         padding-right: 3rem;
     }
+}
+
+@mixin h-w-{
+    height: 1;
+    width: 1;
 }

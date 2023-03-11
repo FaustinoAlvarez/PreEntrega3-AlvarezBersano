@@ -68,7 +68,7 @@ main {
 }
 
 .p-PC-R2 {
-  padding-right: 7rem;
+  padding-right: 4rem;
 }
 
 .p-PC-L {
@@ -109,6 +109,21 @@ main {
 .iframe_video {
   width: 560px;
   height: 315px;
+}
+
+.carrousel-container {
+  width: 50vh;
+}
+
+.carrousel-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* PC tamaño normal */
