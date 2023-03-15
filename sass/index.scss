@@ -39,6 +39,9 @@ main {
 .ps-10{
     padding-left: 10rem;
 }
+.ps-15{
+    padding-left: 15rem;
+}
 .ps-28{
     padding-left: 28rem;
 }
@@ -87,7 +90,7 @@ main {
     height: 315px;
 }
 
-.carrousel-container{
+.container{
     width: 50vh;
 }
 .carrousel-container {
@@ -95,9 +98,43 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+// boton del carrousel
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+@mixin h-w-($height, $width){
+    height: $height;
+    width: $width;
+}
+@mixin m-($marginT, $marginR, $marginB, $marginL,){
+    margin-top: $marginT;
+    margin-right: $marginR;
+    margin-bottom: $marginB;
+    margin-left: $marginL;
+}
+.img-tamaño{
+    @include h-w-(100%, 100%)
+}
 .center{
-    margin-left: auto;
-    margin-right: auto;
+    @include m-(0, 18%, 0, 18%)
+}
+.center-l{
+    @include m-(0, 40%, 0, 40%)
+}
+// televisor
+@media (max-width: 1660px){
+    .center{
+        @include m-(0, 18%, 0, 18%)
+    }
+    .center-l{
+        @include m-(0, 35%, 0, 35%)
+    }
 }
 /* PC tamaño normal */
 @media (max-width: 1440px){
@@ -125,6 +162,13 @@ main {
         .fs-XL{
             font-size: 4.2rem;
         }
+    .center{
+        @include m-(0, 12%, 0, 12%)
+    }
+    .center-l{
+        @include m-(0, 31%, 0, 31%)
+    }
+
 }
 
 /* Tablet */
@@ -151,6 +195,12 @@ main {
     .ps-1-4{
         padding-left: 13.8rem;
         }
+    .center{
+        @include m-(0, 10%, 0, 10%)
+    }
+    .center-l{
+        @include m-(0, 28%, 0, 28%)
+    }
 }
 
 /* Telefono */
@@ -189,9 +239,13 @@ main {
     .pe-10{
         padding-right: 3rem;
     }
-}
-
-@mixin h-w-{
-    height: 1;
-    width: 1;
+    .img-tamaño{
+        @include h-w-(50%, 100%)
+    }
+    .center{
+        @include m-(0, 5%, 0, 7%)
+    }
+    .center-l{
+        @include m-(0, 23%, 0, 23%)
+    }
 }
