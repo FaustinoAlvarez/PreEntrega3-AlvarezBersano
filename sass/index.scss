@@ -104,28 +104,32 @@ main {
     height: $height;
     width: $width;
 }
-@mixin m-($marginT, $marginR, $marginB, $marginL,){
+@mixin m-p-($marginT, $marginR, $marginB, $marginL, $paddingT, $paddingR, $paddingB, $paddingL){
     margin-top: $marginT;
     margin-right: $marginR;
     margin-bottom: $marginB;
     margin-left: $marginL;
+    padding-top: $paddingT;
+    padding-right: $paddingR;
+    padding-bottom: $paddingB;
+    padding-left: $paddingL;
 }
 .img-tamaño{
     @include h-w-(100%, 100%)
 }
 .center{
-    @include m-(0, 18%, 0, 18%)
+    @include m-p-(0, 18%, 0, 18%, 0, 0, 0, 0)
 }
 .center-l{
-    @include m-(0, 40%, 0, 40%)
+    @include m-p-(0, 40%, 0, 40%, 0, 0, 0, 0)
 }
 // televisor
 @media (max-width: 1660px){
     .center{
-        @include m-(0, 18%, 0, 18%)
+        @include m-p-(0, 18%, 0, 18%, 0, 0, 0, 0)
     }
     .center-l{
-        @include m-(0, 35%, 0, 35%)
+        @include m-p-(0, 35%, 0, 35%, 0, 0, 0, 0)
     }
 }
 /* PC tamaño normal */
@@ -155,10 +159,10 @@ main {
             font-size: 4.2rem;
         }
     .center{
-        @include m-(0, 12%, 0, 12%)
+        @include m-p-(0, 12%, 0, 12%, 0, 0, 0, 0)
     }
     .center-l{
-        @include m-(0, 31%, 0, 31%)
+        @include m-p-(0, 31%, 0, 31%, 0, 0, 0, 0)
     }
 
 }
@@ -188,10 +192,10 @@ main {
         padding-left: 13.8rem;
         }
     .center{
-        @include m-(0, 10%, 0, 10%)
+        @include m-p-(0, 10%, 0, 10%, 0, 0, 0, 0)
     }
     .center-l{
-        @include m-(0, 28%, 0, 28%)
+        @include m-p-(0, 28%, 0, 28%, 0, 0, 0, 0)
     }
 }
 
@@ -235,9 +239,9 @@ main {
         @include h-w-(50%, 100%)
     }
     .center{
-        @include m-(0, 5%, 0, 7%)
+        @include m-p-(0, 5%, 0, 7%, 0, 0, 0, 0)
     }
     .center-l{
-        @include m-(0, 23%, 0, 23%)
+        @include m-p-(0, 23%, 0, 23%, 0, 0, 0, 0)
     }
 }
