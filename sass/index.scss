@@ -124,11 +124,17 @@ main {
     margin-right: auto;
     width: 60vh;
 }
+.tamaño-main{
+    @include h-w- (95vh, none)
+}
 .center{
     @include m-p-(0, 18%, 0, 18%, 0, 0, 0, 0)
 }
 .center-l{
     @include m-p-(0, 40%, 0, 40%, 0, 0, 0, 0)
+}
+.pb-missyou{
+    padding-bottom: 20rem;
 }
 // televisor
 @media (max-width: 1660px){
@@ -138,6 +144,7 @@ main {
     .center-l{
         @include m-p-(0, 35%, 0, 35%, 0, 0, 0, 0)
     }
+    
 }
 /* PC tamaño normal */
 @media (max-width: 1440px){
@@ -177,7 +184,12 @@ main {
         margin-right: auto;
         width: 50vh;
     }
-
+    .tamaño-main{
+        @include h-w- (92vh, none)
+    }
+    .pb-missyou{
+        padding-bottom: 6rem;
+    }
 }
 
 /* Tablet */
@@ -215,6 +227,9 @@ main {
         margin-left: auto;
         margin-right: auto;
         width: 35vh;
+    }
+    .tamaño-main{
+        @include h-w- (88vh, none)
     }
 }
 
@@ -268,4 +283,8 @@ main {
         margin-right: auto;
         width: 26vh;
     }
+    .tamaño-main{
+        @include h-w- (88vh, none)
+    }
 }
+

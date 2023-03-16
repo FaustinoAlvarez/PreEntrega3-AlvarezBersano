@@ -136,6 +136,11 @@ main {
   width: 60vh;
 }
 
+.tamaño-main {
+  height: 95vh;
+  width: none;
+}
+
 .center {
   margin-top: 0;
   margin-right: 18%;
@@ -156,6 +161,10 @@ main {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
+}
+
+.pb-missyou {
+  padding-bottom: 20rem;
 }
 
 @media (max-width: 1660px) {
@@ -232,6 +241,13 @@ main {
     margin-right: auto;
     width: 50vh;
   }
+  .tamaño-main {
+    height: 92vh;
+    width: none;
+  }
+  .pb-missyou {
+    padding-bottom: 6rem;
+  }
 }
 /* Tablet */
 @media (max-width: 992px) {
@@ -282,6 +298,10 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 35vh;
+  }
+  .tamaño-main {
+    height: 88vh;
+    width: none;
   }
 }
 /* Telefono */
@@ -349,6 +369,10 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 26vh;
+  }
+  .tamaño-main {
+    height: 88vh;
+    width: none;
   }
 }
 
