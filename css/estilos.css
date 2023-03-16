@@ -129,6 +129,13 @@ main {
   width: 100%;
 }
 
+.carrousel-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vh;
+}
+
 .center {
   margin-top: 0;
   margin-right: 18%;
@@ -219,6 +226,12 @@ main {
     padding-bottom: 0;
     padding-left: 0;
   }
+  .carrousel-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+  }
 }
 /* Tablet */
 @media (max-width: 992px) {
@@ -263,6 +276,12 @@ main {
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+  }
+  .carrousel-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vh;
   }
 }
 /* Telefono */
@@ -324,6 +343,12 @@ main {
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+  }
+  .carrousel-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 26vh;
   }
 }
 
