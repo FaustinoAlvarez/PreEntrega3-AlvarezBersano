@@ -147,6 +147,9 @@ main {
 .tablet-telefono{
     display: none;
 }
+.ps-10-PC{
+    padding-left: 10rem;
+}
 // televisor
 @media (max-width: 1660px){
     .center{
@@ -256,6 +259,15 @@ main {
     .row{
         justify-content: center;
     }
+    .text-center-telefono{
+        text-align: center
+    }
+    .ps-10-PC{
+        padding-left: 0;
+    }
+    .center-auto-img2{
+        text-align: center;
+    }
 }
 
 /* Telefono */
@@ -291,6 +303,9 @@ main {
     .ps-10{
         padding-left: 3rem;
     }
+    .ps-10-PC{
+        padding-left: 0;
+    }
     .pe-10{
         padding-right: 3rem;
     }
@@ -319,6 +334,12 @@ main {
     }
     .row{
         justify-content: center;
+    }
+    .text-center-telefono{
+        text-align: center
+    }
+    .center-auto-img2{
+        text-align: center;
     }
 }
 
