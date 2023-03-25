@@ -124,6 +124,14 @@ main {
     margin-right: auto;
     width: 60vh;
 }
+.center-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-auto-img{
+    margin-left: auto;
+    margin-right: auto;
+}
 .tamaño-main{
     @include h-w- (95vh, none)
 }
@@ -136,6 +144,9 @@ main {
 .pb-missyou{
     padding-bottom: 20rem;
 }
+.tablet-telefono{
+    display: none;
+}
 // televisor
 @media (max-width: 1660px){
     .center{
@@ -144,7 +155,9 @@ main {
     .center-l{
         @include m-p-(0, 35%, 0, 35%, 0, 0, 0, 0)
     }
-    
+    .tablet-telefono{
+        display: none;
+    }
 }
 /* PC tamaño normal */
 @media (max-width: 1440px){
@@ -190,18 +203,21 @@ main {
     .pb-missyou{
         padding-bottom: 6rem;
     }
+    .tablet-telefono{
+        display: none;
+    }
 }
 
 /* Tablet */
 @media (max-width: 992px) {
     .p-PC-R{
-        padding-right: 0rem;
+        padding-right: 0;
     }
     .p-PC-R2{
         padding-right: 0rem;
     }
     .p-PC-L{
-        padding-left: 0rem;
+        padding-left: 0;
     }
     .iframe_video{
         width: 420px;
@@ -230,6 +246,15 @@ main {
     }
     .tamaño-main{
         @include h-w- (88vh, none)
+    }
+    .pc-tele{
+        display: none;
+    }
+    .tablet-telefono{
+        display: flex;
+    }
+    .row{
+        justify-content: center;
     }
 }
 
@@ -285,6 +310,15 @@ main {
     }
     .tamaño-main{
         @include h-w- (88vh, none)
+    }
+    .pc-tele{
+        display: none;
+    }
+    .tablet-telefono{
+        display: flex;
+    }
+    .row{
+        justify-content: center;
     }
 }
 
